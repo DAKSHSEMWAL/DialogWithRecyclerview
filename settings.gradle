@@ -1,0 +1,2 @@
+rootProject.name='DialogWithRecyclerView'
+include ':app'

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blurr_back"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_30sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/dialog_background_round"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/closeDialogImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/ic_reject_withoutcircle" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listproperties"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_below="@id/closeDialogImg"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_23sdp"
+                android:visibility="gone"
+                tools:listitem="@layout/item_properties" />
+
+            <TextView
+                android:id="@+id/nodata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notoserifjp_medium"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:text="@string/noproperty"
+                android:textAlignment="center"
+                android:textColor="@color/SilverChalice"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

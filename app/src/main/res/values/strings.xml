@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DialogWithRecyclerView</string>
+    <string name="northroad">794 North Road ROCHESTER ME59&#8320;</string>
+    <string name="property_image">Property Image</string>
+    <string name="noproperty">No Property</string>
+
+
+</resources>
